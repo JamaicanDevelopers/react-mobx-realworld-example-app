@@ -20,6 +20,15 @@ To get the frontend running locally:
 - `npm start` to start the local server (this project uses create-react-app)
 
 
+
+```bash
+docker build -t realworld/frontend-react-mobx .
+```
+
+```
+docker run -d -p 8090:8080  -v ~/realworld/react-redux:/usr/src/app --name frontend-react-mobx realworld/frontend-react-mobx
+```
+
 ### Making requests to the backend API
 
 For convenience, we have a live API server running at https://conduit.productionready.io/api for the application to make requests against. You can view [the API spec here](https://github.com/GoThinkster/productionready/blob/master/api) which contains all routes & responses for the server.
