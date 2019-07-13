@@ -15,6 +15,14 @@ You can view a live demo over at https://react-mobx.realworld.io/
 
 To get the frontend running locally:
 
+#### option 1: use Docker
+
+```
+docker run -d -p 8081:3000   --name frontend-react-mobx realworldio/frontend-react-mobx
+```
+
+#### option 2: install locally 
+
 - Clone this repo
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server (this project uses create-react-app)
